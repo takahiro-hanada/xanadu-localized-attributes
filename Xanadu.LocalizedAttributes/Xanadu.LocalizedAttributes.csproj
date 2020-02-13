@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Company />
+    <Authors>Takahiro Hanada</Authors>
+    <Copyright>© 2020 Takahiro Hanada</Copyright>
+    <PackageProjectUrl>github.com/takahiro-hanada/xanadu-localized-attributes</PackageProjectUrl>
+    <Version>1.0.0-beta</Version>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <RootNamespace>Xanadu</RootNamespace>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>LocalizedDisplayNameAttribute, LocalizedDescriptionAttribute, LocalizedCategoryAttribute</PackageTags>
+  </PropertyGroup>
+
+</Project>
