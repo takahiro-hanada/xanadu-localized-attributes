@@ -1,6 +1,6 @@
 ﻿namespace Demo
 {
-    partial class MainfForm
+    partial class MainForm
     {
         /// <summary>
         /// 必要なデザイナー変数です。
@@ -28,25 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.personControl1 = new DemoLibrary.PersonControl();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // propertyGrid1
             // 
-            this.propertyGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.propertyGrid1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.propertyGrid1, "propertyGrid1");
             this.propertyGrid1.Name = "propertyGrid1";
-            this.propertyGrid1.Size = new System.Drawing.Size(800, 450);
-            this.propertyGrid1.TabIndex = 0;
             // 
-            // Form1
+            // tableLayoutPanel1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.propertyGrid1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.personControl1, 1, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // personControl1
+            // 
+            resources.ApplyResources(this.personControl1, "personControl1");
+            this.personControl1.Age = ((ushort)(0));
+            this.personControl1.Name = "personControl1";
+            // 
+            // MainForm
+            // 
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.propertyGrid1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Name = "MainForm";
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -54,6 +67,8 @@
         #endregion
 
         private System.Windows.Forms.PropertyGrid propertyGrid1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private DemoLibrary.PersonControl personControl1;
     }
 }
 

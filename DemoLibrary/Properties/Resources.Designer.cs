@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Demo.Properties {
+namespace DemoLibrary.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Demo.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Demo.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DemoLibrary.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,29 +61,29 @@ namespace Demo.Properties {
         }
         
         /// <summary>
-        ///   Personal information に類似しているローカライズされた文字列を検索します。
+        ///   Personal Info に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        internal static string Person_Name_Category {
+        internal static string DemoControl_Age_Category {
             get {
-                return ResourceManager.GetString("Person_Name_Category", resourceCulture);
+                return ResourceManager.GetString("DemoControl_Age_Category", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Separate the first and last names with a space. に類似しているローカライズされた文字列を検索します。
+        ///   Misrepresentation welcomes. に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        internal static string Person_Name_Description {
+        internal static string DemoControl_Age_Description {
             get {
-                return ResourceManager.GetString("Person_Name_Description", resourceCulture);
+                return ResourceManager.GetString("DemoControl_Age_Description", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Name に類似しているローカライズされた文字列を検索します。
+        ///   Age に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        internal static string Person_Name_DisplayName {
+        internal static string DemoControl_Age_DisplayName {
             get {
-                return ResourceManager.GetString("Person_Name_DisplayName", resourceCulture);
+                return ResourceManager.GetString("DemoControl_Age_DisplayName", resourceCulture);
             }
         }
     }

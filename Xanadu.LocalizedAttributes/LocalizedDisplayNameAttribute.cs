@@ -11,13 +11,13 @@ namespace Xanadu
 
         readonly ResourceManager _resourceManager;
 
-        public LocalizedDisplayNameAttribute(string resourceKey, Type resourceType)
+        public LocalizedDisplayNameAttribute(string resourceKey, Type resourceType) : base(resourceKey)
         {
             _resourceKey = resourceKey ?? throw new ArgumentNullException(nameof(resourceKey));
 
             _resourceManager = new ResourceManager(resourceType ?? throw new ArgumentNullException(nameof(resourceType)));
         }
 
-        public override string DisplayName => _resourceManager.GetString(_resourceKey) ;
+        public override string DisplayName => _resourceManager.GetString(_resourceKey);
     }
 }

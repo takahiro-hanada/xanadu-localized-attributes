@@ -3,7 +3,7 @@ using Xanadu;
 
 namespace Demo
 {
-    public class Person
+    sealed class Person
     {
         [LocalizedDisplayName(nameof(Resources.Person_Name_DisplayName), typeof(Resources))]
         [LocalizedDescription(nameof(Resources.Person_Name_Description), typeof(Resources))]

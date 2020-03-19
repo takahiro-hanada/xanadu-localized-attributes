@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xanadu.LocalizedAttributes", "Xanadu.LocalizedAttributes\Xanadu.LocalizedAttributes.csproj", "{0061B3FA-0CB6-463D-942D-CDE2EE0A3992}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLibrary", "DemoLibrary\DemoLibrary.csproj", "{1994A6A0-2AC5-42B3-9052-757D5D038365}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0061B3FA-0CB6-463D-942D-CDE2EE0A3992}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0061B3FA-0CB6-463D-942D-CDE2EE0A3992}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0061B3FA-0CB6-463D-942D-CDE2EE0A3992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1994A6A0-2AC5-42B3-9052-757D5D038365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1994A6A0-2AC5-42B3-9052-757D5D038365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1994A6A0-2AC5-42B3-9052-757D5D038365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1994A6A0-2AC5-42B3-9052-757D5D038365}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

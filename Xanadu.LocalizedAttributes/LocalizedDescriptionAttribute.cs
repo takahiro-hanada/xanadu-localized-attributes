@@ -5,16 +5,16 @@ using System.Resources;
 namespace Xanadu
 {
     [AttributeUsage(AttributeTargets.All)]
-    public sealed class LocalizedDescriptionAttribute : DescriptionAttribute
+    public class LocalizedDescriptionAttribute : DescriptionAttribute
     {
         readonly string _resourceKey;
 
         readonly ResourceManager _resourceManager;
 
-        public LocalizedDescriptionAttribute(string resourceKey, Type resourceType)
+        public LocalizedDescriptionAttribute(string resourceKey, Type resourceType) : base(resourceKey)
         {
             _resourceKey = resourceKey ?? throw new ArgumentNullException(nameof(resourceKey));
-
+            
             _resourceManager = new ResourceManager(resourceType ?? throw new ArgumentNullException(nameof(resourceType)));
         }
 

@@ -1,13 +1,20 @@
-﻿using System.Windows.Forms;
+﻿using System.Globalization;
+using System.Threading;
+using System.Windows.Forms;
 
 namespace Demo
 {
-    public partial class MainfForm : Form
+    sealed partial class MainForm : Form
     {
-        public MainfForm()
+        static MainForm()
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja");
+        }
+
+        public MainForm()
         {
             InitializeComponent();
-
+            
             propertyGrid1.SelectedObject = new Person();
         }
     }

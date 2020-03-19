@@ -5,13 +5,13 @@ using System.Resources;
 namespace Xanadu
 {
     [AttributeUsage(AttributeTargets.All)]
-    public sealed class LocalizedCategoryAttribute : CategoryAttribute
+    public class LocalizedCategoryAttribute : CategoryAttribute
     {
         readonly string _resourceKey;
 
         readonly ResourceManager _resourceManager;
 
-        public LocalizedCategoryAttribute(string resourceKey, Type resourceType)
+        public LocalizedCategoryAttribute(string resourceKey, Type resourceType) : base(resourceKey)
         {
             _resourceKey = resourceKey ?? throw new ArgumentNullException(nameof(resourceKey));
 
